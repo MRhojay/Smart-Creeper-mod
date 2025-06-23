@@ -1,0 +1,43 @@
+plugins {
+‎id 'fabric-loom' version '1.10.1'
+‎id 'maven-publish'
+‎}
+‎
+‎ext {
+‎minecraft_version = "1.20.1"
+‎fabric_loader_version = "0.16.4"
+‎fabric_api_version = "0.92.6+1.20.1"
+‎}
+‎
+‎group = 'com.smartcreeper'
+‎version = '1.0.0'
+‎
+‎repositories {
+‎mavenCentral()
+‎}
+‎
+‎dependencies {
+‎minecraft "com.mojang:minecraft:$minecraft_version"
+‎mappings "net.fabricmc:yarn:${minecraft_version}+build.10:v2"
+‎modImplementation "net.fabricmc:fabric-loader:$fabric_loader_version"
+‎modImplementation "net.fabricmc.fabric-api:fabric-api:$fabric_api_version"
+‎}
+‎
+‎java {
+‎toolchain.languageVersion.set(JavaLanguageVersion.of(17))
+‎}
+‎
+‎loom {
+‎splitEnvironmentSourceSets()
+‎// ❌ REMOVE modMetadata block – not supported in Loom 1.10.1
+‎}
+‎</code>
+‎/settings.gradle:
+‎<code>
+‎pluginManagement {
+‎repositories {
+‎gradlePluginPortal()
+‎maven { url = "https://maven.fabricmc.net/" }
+‎mavenCentral()
+‎}
+‎}
