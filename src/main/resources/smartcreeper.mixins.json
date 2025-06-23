@@ -1,0 +1,14 @@
+‎{
+‎"required": true,
+‎"package": "com.smartcreeper.mixin",
+‎"compatibilityLevel": "JAVA_17",
+‎"mixins": [
+‎"CreeperEntityMixin"
+‎],
+‎"accessors": [
+‎"MobEntityAccessor"
+‎],
+‎"injectors": {
+‎"defaultRequire": 1
+‎}
+‎}
