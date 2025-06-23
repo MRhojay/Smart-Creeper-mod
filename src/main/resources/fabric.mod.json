@@ -1,0 +1,26 @@
+‎{
+‎"schemaVersion": 1,
+‎"id": "smartcreeper",
+‎"version": "1.0.0",
+‎"name": "Smart Creeper",
+‎"description": "Make Creeper more intelligent.",
+‎"authors": [
+‎"MR_OK"
+‎],
+‎"contact": {},
+‎"license": "MIT",
+‎"environment": "*",
+‎"entrypoints": {
+‎"main": [
+‎"com.smartcreeper.SmartCreeperMod"
+‎]
+‎},
+‎"mixins": [
+‎"smartcreeper.mixins.json"
+‎],
+‎"depends": {
+‎"fabricloader": ">=0.16.0",
+‎"fabric": "0.92.6+1.20.1",
+‎"minecraft": "1.20.1"
+‎}
+‎}
